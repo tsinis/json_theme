@@ -1,61 +1,20 @@
-name: 'json_theme'
-description: 'A library to dynamically generate a ThemeData object from a JSON file or dynamic map object'
-homepage: 'https://github.com/peiffer-innovations/json_theme'
-version: '6.1.0'
+name: example
+description: A theme preview example.
+publish_to: 'none'
+version: 0.1.0
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
-
-analyzer:
-  exclude:
-    - 'lib/generated/**'
-    - 'lib/**/*.g.dart'
+  sdk: '>=3.0.6'
 
 dependencies:
   flutter:
-    sdk: 'flutter'
-  json_class: '^3.0.0'
-  json_schema: '^5.1.2'
-  json_theme_annotation: '^1.0.0+1'
-  meta: '^1.9.1'
+    sdk: flutter
 
 dev_dependencies:
-  analyzer: '^5.13.0'
-  build: '^2.4.0'
-  build_runner: '^2.4.5'
-  code_builder: '^4.4.0'
+  dart_code_metrics: ^5.7.6
+  flutter_lints: ^2.0.2
   flutter_test:
-    sdk: 'flutter'
-  json_theme_codegen: '^1.0.0+1'
-  recase: '^4.1.0'
-  source_gen: '^1.2.7'
+    sdk: flutter
 
-dependency_overrides:
-  json_theme_codegen:
-    path: ../codegen
-
-ignore_updates:
-  - 'archive'
-  - 'async'
-  - 'boolean_selector'
-  - 'characters'
-  - 'charcode'
-  - 'collection'
-  - 'clock'
-  - 'crypto'
-  - 'fake_async'
-  - 'file'
-  - 'matcher'
-  - 'material_color_utilities'
-  - 'meta'
-  - 'path'
-  - 'source_span'
-  - 'stack_trace'
-  - 'stream_channel'
-  - 'string_scanner'
-  - 'sync_http'
-  - 'term_glyph'
-  - 'test_api'
-  - 'typed_data'
-  - 'vector_math'
-  - 'webdriver'
+flutter:
+  uses-material-design: true
